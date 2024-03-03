@@ -97,4 +97,46 @@ h6 {
 }
 .head__btn:hover {
   background-color: var(--color-Dark-Blue-Grey);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.hero__text {
+  justify-self: start;
+  padding-right: 4rem;
+}
+.hero__title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 70px;
+  color: var(--color-Yankees-Blue);
+}
+.hero__subtext {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-Roman-Silver);
+  padding-block-start: 1.8rem;
+  padding-inline-end: 3.5rem;
+}
+.hero__btn {
+  background: var(--Gradient-1-Linear);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+.hero__btn:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--Gradient-1-Linear);
 }/*# sourceMappingURL=style.css.map */

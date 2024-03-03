@@ -1,0 +1,33 @@
+@use "../global/base" as b;
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+  &__text {
+    justify-self: start;
+    padding-right: 4rem;
+  }
+
+  &__title {
+    @include b.heading-xl;
+  }
+
+  &__subtext {
+    @include b.body-m;
+    padding-block-start: 1.8rem;
+    padding-inline-end: 3.5rem;
+  }
+
+  &__btn {
+    @include b.button-2;
+    margin-top: 2.5rem;
+  }
+
+  &__main-image {
+  }
+
+  &__image {
+  }
+}
