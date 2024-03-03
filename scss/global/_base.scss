@@ -1,0 +1,129 @@
+:root {
+  // Colors
+
+  --color-Dark-Blue-Grey: hsl(234, 25%, 52%);
+  --color-Yankees-Blue: hsl(233, 54%, 16%);
+  --color-Roman-Silver: hsl(232, 10%, 56%);
+  --color-Sasquatch-Socks: hsl(341, 92%, 62%);
+  --color-Carnation-Pink: hsl(341, 100%, 83%);
+  --color-White: hsl(0, 0%, 100%);
+  --Gradient-1-Linear: linear-gradient(
+    to bottom,
+    hsl(13, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+  --Gradient-2-Linear: linear-gradient(
+    to bottom,
+    hsl(237, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+}
+
+// Typography
+
+@mixin heading-xl {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800; // Extra Bold
+  font-size: 56px;
+  line-height: 70px;
+  color: var(--color-Yankees-Blue);
+}
+
+@mixin heading-l {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800; // Extra Bold
+  font-size: 40px;
+  line-height: 51px;
+  color: var(--color-Yankees-Blue);
+}
+
+@mixin heading-m {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800; // Extra Bold
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-Yankees-Blue);
+}
+
+@mixin heading-s {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800; // Extra Bold
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-Yankees-Blue);
+}
+
+@mixin body-m {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500; // Medium
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-Roman-Silver);
+}
+
+@mixin body-s {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700; // Bold
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--color-Roman-Silver);
+}
+
+@mixin button-1 {
+  background-color: var(--color-Yankees-Blue);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--color-Dark-Blue-Grey);
+  }
+}
+
+@mixin button-2 {
+  background: var(--Gradient-1-Linear);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      var(--Gradient-1-Linear);
+  }
+}
+
+@mixin button-3 {
+  background: var(--Gradient-2-Linear);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      var(--Gradient-2-Linear);
+  }
+}
