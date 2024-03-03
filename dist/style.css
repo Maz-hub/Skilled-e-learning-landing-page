@@ -62,6 +62,39 @@ h6 {
           hyphens: auto;
 }
 
-h2 {
-  color: red;
+.wrapper {
+  margin: 0 clamp(1rem, -2.2790492958rem + 13.9906103286vw, 10.3125rem);
+}
+
+.head {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 375px) {
+  .head {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .head__logo {
+    width: 5.563rem;
+    height: auto;
+  }
+}
+.head__btn {
+  background-color: var(--color-Yankees-Blue);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.head__btn:hover {
+  background-color: var(--color-Dark-Blue-Grey);
 }/*# sourceMappingURL=style.css.map */

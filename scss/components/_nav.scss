@@ -1,0 +1,22 @@
+@use "../global/base" as b;
+
+.head {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 375px) {
+    margin-top: 1rem;
+  }
+  &__logo {
+    @media (max-width: 768px) {
+      width: 5.563rem;
+      height: auto;
+    }
+  }
+
+  &__btn {
+    @include b.button-1;
+  }
+}

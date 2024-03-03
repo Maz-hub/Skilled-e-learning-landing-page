@@ -44,3 +44,8 @@ h6 {
   overflow-wrap: break-word;
   hyphens: auto;
 }
+
+.wrapper {
+  margin: 0
+    clamp(1rem, -2.279049295774648rem + 13.990610328638498vw, 10.3125rem);
+}
