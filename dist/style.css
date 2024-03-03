@@ -18,20 +18,48 @@
   );
 }
 
-.btn {
-  background: var(--Gradient-2-Linear);
-  color: var(--color-White);
-  padding: 0.875rem 2rem;
-  font-size: 1.125rem;
-  font-weight: 700;
-  border-radius: 3.125rem;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.btn:hover {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--Gradient-2-Linear);
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 h2 {

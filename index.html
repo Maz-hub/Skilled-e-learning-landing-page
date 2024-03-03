@@ -15,26 +15,135 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
-    <h1>test</h1>
-    <p class="test">Hello World</p>
-    <p>test</p>
-    <p>test test</p>
-    <button class="btn">Get Started 1</button>
-    <button class="btn-2">Get started 2</button>
-    Get Started Maximize skill, minimize budget Our modern courses across a
-    range of in-demand skills will give you the knowledge you need to live the
-    life you want. Get Started Check out our most popular courses! Animation
-    Learn the latest animation techniques to create stunning motion design and
-    captivate your audience. Get Started Design Create beautiful, usable
-    interfaces to help shape the future of how the web looks. Get Started
-    Photography Explore critical fundamentals like lighting, composition, and
-    focus to capture exceptional photos. Get Started Crypto All you need to know
-    to get started investing in crypto. Go from beginner to advanced with this
-    54 hour course. Get Started Business A step-by-step playbook to help you
-    start, scale, and sustain your business without outside investment. Get
-    Started Get Started
-    <footer>
-      <h2>this is a footer test</h2>
+    <header class="head wrapper">
+      <img
+        src="assets/logo-dark.svg"
+        alt="logo"
+        width="111"
+        height="27"
+        class="head__logo"
+      />
+      <button class="head__btn">Get Started</button>
+    </header>
+
+    <main class="hero wrapper">
+      <article class="hero__text">
+        <h1 class="hero__title">Maximize skill, minimize budget</h1>
+        <p class="hero__subtext">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+        <button class="hero_btn">Get Started</button>
+      </article>
+
+      <figure class="hero__main-image">
+        <img src="assets/image-hero-desktop.webp" alt="" class="hero__image" />
+      </figure>
+    </main>
+
+    <section class="grid wrapper">
+      <h2 class="grid__cta">Check out our most popular courses!</h2>
+
+      <!-- Animation -->
+
+      <div class="grid__services">
+        <img
+          src="assets/icon-animation.svg"
+          alt="Icon"
+          width="56"
+          height="56"
+          class="grid__icon"
+        />
+        <h3 class="grid__title">Animation</h3>
+        <p class="grid__subtext">
+          Learn the latest animation techniques to create stunning motion design
+          and captivate your audience.
+        </p>
+        <a href="/" class="grid__link">Get Started</a>
+      </div>
+
+      <!-- Design -->
+
+      <div class="grid__services">
+        <img
+          src="assets/icon-design.svg"
+          alt="Icon"
+          width="56"
+          height="56"
+          class="grid__icon"
+        />
+        <h3 class="grid__title">Design</h3>
+        <p class="grid__subtext">
+          Create beautiful, usable interfaces to help shape the future of how
+          the web looks.
+        </p>
+        <a href="/" class="grid__link">Get Started</a>
+      </div>
+
+      <!-- Photography -->
+
+      <div class="grid__services">
+        <img
+          src="assets/icon-photography.svg"
+          alt="Icon"
+          width="56"
+          height="56"
+          class="grid__icon"
+        />
+        <h3 class="grid__title">Photography</h3>
+        <p class="grid__subtext">
+          Explore critical fundamentals like lighting, composition, and focus to
+          capture exceptional photos.
+        </p>
+        <a href="/" class="grid__link">Get Started</a>
+      </div>
+
+      <!-- Crypto -->
+
+      <div class="grid__services">
+        <img
+          src="assets/icon-crypto.svg"
+          alt="Icon"
+          width="56"
+          height="56"
+          class="grid__icon"
+        />
+        <h3 class="grid__title">Crypto</h3>
+        <p class="grid__subtext">
+          All you need to know to get started investing in crypto. Go from
+          beginner to advanced with this 54 hour course.
+        </p>
+        <a href="/" class="grid__link">Get Started</a>
+      </div>
+
+      <!-- Business -->
+
+      <div class="grid__services">
+        <img
+          src="assets/icon-business.svg"
+          alt="Icon"
+          width="56"
+          height="56"
+          class="grid__icon"
+        />
+        <h3 class="grid__title">Business</h3>
+        <p class="grid__subtext">
+          A step-by-step playbook to help you start, scale, and sustain your
+          business without outside investment.
+        </p>
+        <a href="/" class="grid__link">Get Started</a>
+      </div>
+    </section>
+
+    <footer class="footer wrapper">
+      <img
+        src="assets/logo-light.svg"
+        alt="Logo"
+        width="111"
+        height="27"
+        class="footer__logo"
+      />
+      <button class="footer__btn">Get Started</button>
     </footer>
   </body>
 </html>
