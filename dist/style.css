@@ -28,7 +28,9 @@
   margin: 0;
 }
 
-html {
+html,
+body {
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -36,6 +38,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
   background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
@@ -63,6 +66,8 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 .wrapper {
@@ -194,7 +199,7 @@ h6 {
     width: 100%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .hero {
     grid-template-columns: 1fr;
     position: relative;
@@ -226,7 +231,7 @@ h6 {
     margin-bottom: 5.375rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 45px 11px;

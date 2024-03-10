@@ -12,7 +12,9 @@
   margin: 0;
 }
 
-html {
+html,
+body {
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -20,7 +22,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-
+  overflow-x: hidden;
   background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
@@ -48,7 +50,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  // hyphens: auto;
+  hyphens: auto;
 }
 
 .wrapper {
