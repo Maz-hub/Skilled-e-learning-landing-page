@@ -1,0 +1,16 @@
+@use "../global/base" as b;
+
+.footer {
+  background-color: var(--color-Yankees-Blue);
+  padding: 2rem 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    @include b.button-3;
+  }
+}

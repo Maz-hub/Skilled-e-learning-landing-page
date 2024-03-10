@@ -24,7 +24,7 @@
 @mixin heading-xl {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 70px;
   color: var(--color-Yankees-Blue);
 }
@@ -32,7 +32,7 @@
 @mixin heading-l {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 2.5em;
   line-height: 51px;
   color: var(--color-Yankees-Blue);
 }
@@ -40,7 +40,7 @@
 @mixin heading-m {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 40px;
   color: var(--color-Yankees-Blue);
 }
@@ -48,7 +48,7 @@
 @mixin heading-s {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 28px;
   color: var(--color-Yankees-Blue);
 }
@@ -56,7 +56,7 @@
 @mixin body-m {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 28px;
   color: var(--color-Roman-Silver);
 }
@@ -64,7 +64,7 @@
 @mixin body-s {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 28px;
   color: var(--color-Roman-Silver);
 }

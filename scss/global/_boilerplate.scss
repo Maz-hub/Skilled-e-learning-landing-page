@@ -17,13 +17,13 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
 img,
 picture,
 video,
 canvas,
-figure,
 svg {
   display: block;
   max-width: 100%;
@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  hyphens: auto;
+  // hyphens: auto;
 }
 
 .wrapper {

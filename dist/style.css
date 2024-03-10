@@ -33,13 +33,13 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
 img,
 picture,
 video,
 canvas,
-figure,
 svg {
   display: block;
   max-width: 100%;
@@ -60,8 +60,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-          hyphens: auto;
 }
 
 .wrapper {
@@ -111,7 +109,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  height: 100vh;
 }
 .hero__tablet-image, .hero__mobile-image {
   display: none;
@@ -132,7 +129,7 @@ h6 {
 .hero__title {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 800;
-  font-size: 56px;
+  font-size: 3.5em;
   line-height: 70px;
   color: var(--color-Yankees-Blue);
   padding-bottom: 1.875rem;
@@ -142,7 +139,7 @@ h6 {
   .hero__title {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 51px;
     color: var(--color-Yankees-Blue);
   }
@@ -150,7 +147,7 @@ h6 {
 .hero__subtext {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 28px;
   color: var(--color-Roman-Silver);
   max-width: 27rem;
@@ -159,7 +156,7 @@ h6 {
   .hero__subtext {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 28px;
     color: var(--color-Roman-Silver);
     width: 100%;
@@ -180,4 +177,90 @@ h6 {
 }
 .hero__btn:hover {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--Gradient-1-Linear);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 56px 30px;
+  margin-top: 14rem;
+  margin-bottom: 8.75rem;
+}
+.grid__card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
+  background-color: var(--color-White);
+  border-radius: 1rem;
+  box-shadow: 0px 10px 14px -10px rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+.grid__cta {
+  background-image: var(--Gradient-1-Linear);
+  color: var(--color-White);
+  font-size: clamp(1.5rem, 1.323943662rem + 0.7511737089vw, 2rem);
+  padding: 64px 32px 40px;
+}
+.grid__services {
+  margin-top: 37px;
+  margin-bottom: 40px;
+  padding: 0 32px;
+  grid-row: 2/span 2;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: center;
+}
+.grid__icon {
+  margin-top: -1.5rem;
+  margin-left: 2rem;
+}
+.grid__title {
+  grid-row: 1;
+  color: var(--color-Yankees-Blue);
+  font-size: clamp(1.25rem, 1.161971831rem + 0.3755868545vw, 1.5rem);
+}
+.grid__subtext {
+  grid-row: 2;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 28px;
+  color: var(--color-Roman-Silver);
+  padding: 24px 0;
+}
+.grid__link {
+  grid-row: 3;
+  text-decoration: none;
+  color: var(--color-Sasquatch-Socks);
+  font-weight: bold;
+  font-size: 1.125em;
+}
+.grid__link:hover {
+  color: var(--color-Carnation-Pink);
+}
+
+.footer {
+  background-color: var(--color-Yankees-Blue);
+  padding: 2rem 0;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__btn {
+  background: var(--Gradient-2-Linear);
+  color: var(--color-White);
+  padding: 0.875rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.footer__btn:hover {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--Gradient-2-Linear);
 }/*# sourceMappingURL=style.css.map */
