@@ -8,6 +8,12 @@
   margin-top: 14rem;
   margin-bottom: 8.75rem;
 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 11px;
+    margin-bottom: 5.375rem;
+  }
+
   &__card {
     display: grid;
     grid-template-rows: auto 1fr auto;
