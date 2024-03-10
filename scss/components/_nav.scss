@@ -6,9 +6,14 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 768px) {
+    margin-bottom: 6.25rem;
+  }
+
   @media (max-width: 375px) {
     margin-top: 1rem;
   }
+
   &__logo {
     @media (max-width: 768px) {
       width: 5.563rem;
@@ -18,5 +23,6 @@
 
   &__btn {
     @include b.button-1;
+    z-index: 1;
   }
 }

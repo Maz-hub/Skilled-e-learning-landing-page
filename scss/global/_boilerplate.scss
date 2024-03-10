@@ -16,12 +16,14 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 
 img,
 picture,
 video,
 canvas,
+figure,
 svg {
   display: block;
   max-width: 100%;
