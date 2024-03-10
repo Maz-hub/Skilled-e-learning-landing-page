@@ -28,11 +28,14 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow-x: clip;
   background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
@@ -191,6 +194,22 @@ h6 {
     width: 100%;
   }
 }
+@media (max-width: 375px) {
+  .hero {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .hero__desktop-image, .hero__tablet-image {
+    display: none;
+  }
+  .hero__mobile-image {
+    display: block;
+    position: relative;
+    top: 12rem;
+    right: 22rem;
+    margin-bottom: 5rem;
+  }
+}
 
 .grid {
   display: grid;
@@ -203,6 +222,13 @@ h6 {
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 45px 11px;
+    margin-bottom: 5.375rem;
+  }
+}
+@media (max-width: 375px) {
+  .grid {
+    grid-template-columns: 1fr;
     gap: 45px 11px;
     margin-bottom: 5.375rem;
   }

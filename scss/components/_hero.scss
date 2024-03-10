@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  // position: relative;
 
   &__tablet-image,
   &__mobile-image {
@@ -64,8 +63,21 @@
     }
   }
 
-  // // Mobile view
-  // @media (max-width: 375px) {
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    position: relative;
 
-  // }
+    &__desktop-image,
+    &__tablet-image {
+      display: none;
+    }
+
+    &__mobile-image {
+      display: block;
+      position: relative;
+      top: 12rem;
+      right: 22rem;
+      margin-bottom: 5rem;
+    }
+  }
 }

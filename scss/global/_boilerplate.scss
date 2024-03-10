@@ -12,11 +12,15 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  overflow-x: clip;
+
   background-image: linear-gradient(hsl(0, 0%, 100%), hsl(236, 100%, 97%));
 }
 
